@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+
     <meta charset="utf-8">
+
     <title>Mouli Bheemaneti</title>
+
+    <link rel="shortcut icon" href="assets/imgaes/img_1.png">
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/mb.css">
+
+    <!-- JS files -->
+    <script type="text/javascript" src="assets/js/anime.js"></script>
+    <script type="text/javascript" src="assets/js/mb.js"></script>
   </head>
   <body>
-    <h1>Welcome to MB Universe</h1>
-    <a href="https://moulibheemaneti.github.io/eq_predictor"> EQ Predictor app </a>
+
+    <!-- Main profile pic-->
+    <div class="opaque-container">
+      <div class="jumbotron mb-img" onload=quoteZoom>
+        <div class="quote-box container">
+          <p class="quote-text" >"I never dream about anything, but if I do it, then I'll make sure that I hit it."</p>
+          <p class="quote-author">- Mouli Bheemaneti</p>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+
+    window.onload = quoteZoom;
+
+    var quoteZoom = anime.timeline({loop: false})
+      .add({
+        targets: '.quote-box',
+        opacity: [0,1],
+        scaleX: [0,1],
+        scaleY: [0,1],
+        easing: "easeInOutExpo",
+        duration: 800
+      });
+    </script>
+
+
   </body>
 </html>

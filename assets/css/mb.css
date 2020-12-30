@@ -1,40 +1,79 @@
 /*
-Author: @ Mouli Bheemaneti
+Author: @Mouli Bheemaneti
 */
 
-.jumbotron{
-  background: #000 url('../images/img_1.png') no-repeat center center;
-  background-position: top;
-  background-size: 100% auto ;
-  height: calc(100vh);
-  align-items: center;
+.jumbotron {
+    background: #000 url('../images/img_1.png') no-repeat center center;
+    background-position: top;
+    border-radius: 0;
+    background-size: 100% auto;
+    height: calc(100vh);
+    align-items: center;
 }
 
-.opaque-container{
-  background-size: 100% auto ;
-  height: calc(100vh);
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0);
+.opaque-container {
+    background-size: 100% auto;
+    height: calc(100vh);
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
 }
 
-.quote-box{
-  margin-top: 50vh;
-  background-color: rgba(0, 0, 0, 0.2);
-  align-items: center;
-  text-align: center;
+.quote-box {
+    margin-top: 50vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    align-items: center;
+    text-align: center;
 }
-.quote-text{
-  font-family: serif;
-  font-style: italic;
-  font-size: 28px;
-  font-weight: lighter;
-  font-stretch: expanded;
-  color: white;
+
+.quote-text {
+    font-family: serif;
+    font-style: italic;
+    font-size: 28px;
+    font-weight: lighter;
+    font-stretch: expanded;
+    color: white;
 }
-.quote-author{
-  font-family: sans-serif;
-  font-size: 28px;
-  font-weight: 300;
-  font-stretch: expanded;
-  color: white;
+
+.quote-author {
+    font-family: sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    font-stretch: expanded;
+    color: white;
+}
+
+.mb-brief {
+    background-color: #ffffff;
+    padding: 3% 15% 3% 10%;
+}
+
+.mb-developer {
+    background-color: #aa1bf0;
+    padding: 3% 15% 3% 10%;
+}
+
+.mb-artist {
+    background-color: #a0a0ab;
+    padding: 3% 15% 3% 10%;
+}
+
+.mb-writer {
+    background-color: #006688;
+    padding: 3% 15% 3% 10%;
+}
+
+.mb-footer {
+    background-color: #000;
+    color: #ffffff;
+    align-items: center;
+    padding: 3% 15% 3% 15%;
+}
+
+.mb-fa {
+    text-decoration: none;
+    color: white;
+}
+
+.mb-fa:hover {
+    color: #a0a0ab;
 }

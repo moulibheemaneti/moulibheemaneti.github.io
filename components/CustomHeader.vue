@@ -5,7 +5,7 @@
             <!-- <ul :class="{ 'side-menu-overlay': isSideMenuToggled }"> -->
             <ul>
                 <nuxt-link to="/" class="nav-item__brand"><img src="@/assets/images/mb-logomark.svg" />
-                    Mouli Bheemaneti
+                    <p>Mouli Bheemaneti</p>
                 </nuxt-link>
                 <!-- <li class="navbar_toggle"><i class="fa fa-bars"></i></li>
                 <li class="navbar-item">
@@ -114,10 +114,23 @@
         padding: 4rem 0rem;
     }
 
-    .nav_item__brand {
-        display: block;
+    .nav-item__brand {
         padding: 1rem 0rem;
         flex-grow: 4;
+        display: flex;
+        // margin: auto;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 1.5rem;
+
+        img {
+            height: 1.5rem;
+            margin-left: auto;
+        }
+
+        p {
+            margin-right: auto;
+        }
     }
 
     .active {

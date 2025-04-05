@@ -1,0 +1,121 @@
+:root {
+  --loader-size: 15rem;
+  --loader-width: 1rem;
+  --loader-color: rgba(255, 255, 255, 0.2);
+  --color-black: black;
+  --color-white: white;
+}
+
+body,
+#__nuxt {
+  min-height: 100vh;
+  min-width: 100vw;
+  height: 100%;
+  width: 100%;
+  max-height: 100vh;
+  max-width: 100vw;
+  background-color: var(--color-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.loader {
+  position: absolute;
+  border: var(--loader-width) solid var(--loader-color);
+  border-radius: 50%;
+  border-top: var(--loader-width) solid var(--color-white);
+  width: var(--loader-size);
+  height: var(--loader-size);
+  -webkit-animation: spin 2s linear infinite;
+  /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+.mb-logo svg,
+.mb-logo img {
+  width: calc(var(--loader-size) / 2);
+  height: calc(var(--loader-size) / 2);
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Media Query for screens with a width of 480 pixels or less */
+@media only screen and (max-width: 480px) {
+  :root {
+    --loader-size: 180px;
+    --loader-width: 16px;
+  }
+
+  .loader {
+    width: var(--loader-size);
+    height: var(--loader-size);
+    border-width: 8px;
+    border-top-width: 8px;
+  }
+
+  .mb-logo {
+    width: calc(var(--loader-size) / 2);
+    height: calc(var(--loader-size) / 2);
+  }
+}
+
+/* Media Query for screens with a width of 1440 pixels or more */
+@media only screen and (min-width: 1440px) {
+  :root {
+    --loader-size: 480px;
+    --loader-width: 32px;
+  }
+
+  .loader {
+    width: var(--loader-size);
+    height: var(--loader-size);
+    border-width: var(--loader-width);
+    border-top-width: var(--loader-width);
+  }
+
+  .mb-logo {
+    width: calc(var(--loader-size) / 2);
+    height: calc(var(--loader-size) / 2);
+  }
+}
+
+.redirecting-text {
+  position: absolute;
+  color: var(--color-white);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  bottom: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 300;
+}
+
+.redirecting-text a {
+  color: grey;
+}
+
+.redirecting-text a:hover {
+  color: var(--color-white);
+}
